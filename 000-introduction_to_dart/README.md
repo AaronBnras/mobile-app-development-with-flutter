@@ -1,2 +1,2 @@
-# simple dart program 
-# hello GROUP 1
+# introduction to dart programming language
+# simple dart programs taken through learning the course
