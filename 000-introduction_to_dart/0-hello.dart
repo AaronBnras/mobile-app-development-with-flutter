@@ -1,5 +1,5 @@
 void greetUser(String name) {
-  print("hello + $name!");
+  print("hello $name!");
 }
 
 void main() {
