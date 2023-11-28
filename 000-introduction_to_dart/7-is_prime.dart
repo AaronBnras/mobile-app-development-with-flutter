@@ -5,3 +5,9 @@ bool isPrime(int number) {
   }
   return true;
 }
+
+void main() {
+  int number = 3;
+
+  isPrime(number);
+}
