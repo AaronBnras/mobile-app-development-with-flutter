@@ -11,7 +11,7 @@ bool isPrime(int number) {
 }
 
 void main() {
-  int number = 2;
+  int number = 29;
 
   bool result = isPrime(number);
   print(result);
