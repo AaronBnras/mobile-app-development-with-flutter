@@ -1,13 +1,17 @@
 bool isPrime(int number) {
-  if (number % 2 == 0) {
-    return false;
+  if (number < 2) {
+    if (number % 2 == 0) {
+      return true;
+    } else {
+      return true;
+    }
   } else {
-    return true;
+    return false;
   }
 }
 
 void main() {
-  int number = 2;
+  int number = 5;
 
   bool result = isPrime(number);
   print(result);
