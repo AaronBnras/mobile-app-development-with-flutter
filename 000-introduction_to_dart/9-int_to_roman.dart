@@ -17,7 +17,7 @@ String inToRoman(int number) {
 }
 
 void main() {
-  int number = 0;
+  int number = 88;
 
   String result = inToRoman(number);
 
