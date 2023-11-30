@@ -7,7 +7,7 @@ String inToRoman(int number) {
   final List<int> Values = [1000, 500, 100, 50, 10, 5, 1];
   String result = '';
 
-  for (int i = 0; i < Values.length; i++) {
+  for (int i = 0; i < Values; i++) {
     while (number >= Values[i]) {
       result += Roman[i];
       number -= Values[i];
