@@ -37,9 +37,10 @@ class CalculatorState extends State<Calculator> {
   void calculateArea() {
     double radius = double.tryParse(_controller.text) ?? 0;
     double area = math.pi * math.pow(radius, 2);
+    String formattedArea = area.toStringAsFixed(2);
 
     setState(() {
-      result = 'The area of the circle is $area';
+      result = 'The area of the circle is $formattedArea m\u00B2';
     });
 
     showDialog<void>(
@@ -92,7 +93,7 @@ class CalculatorState extends State<Calculator> {
             ),
             const SizedBox(height: 16),
             SizedBox(
-              width: double.infinity, //  button to take the  width
+              width: double.infinity, // Make the button take the full width
               child: ElevatedButton(
                 onPressed: () {
                   calculateArea();
@@ -100,7 +101,7 @@ class CalculatorState extends State<Calculator> {
                 style: ElevatedButton.styleFrom(
                   elevation: 12.0,
                   shape: RoundedRectangleBorder(
-                    // set the border radius to button
+                    //to set border radius to button
                       borderRadius: BorderRadius.circular(0)),
                   backgroundColor: Colors.blue,
                 ),
