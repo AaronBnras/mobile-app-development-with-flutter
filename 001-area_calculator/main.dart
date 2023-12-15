@@ -92,7 +92,7 @@ class CalculatorState extends State<Calculator> {
             ),
             const SizedBox(height: 16),
             SizedBox(
-              width: double.infinity, // Make the button take the full width
+              width: double.infinity, //  button to take the  width
               child: ElevatedButton(
                 onPressed: () {
                   calculateArea();
@@ -100,7 +100,7 @@ class CalculatorState extends State<Calculator> {
                 style: ElevatedButton.styleFrom(
                   elevation: 12.0,
                   shape: RoundedRectangleBorder(
-                    //to set border radius to button
+                    // set the border radius to button
                       borderRadius: BorderRadius.circular(0)),
                   backgroundColor: Colors.blue,
                 ),
